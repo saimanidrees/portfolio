@@ -3056,3 +3056,35 @@ h6 {
     max-width: 340px;
     margin-left: auto;
     margin-right: auto; } }
+
+/* Home banner: keep photo + summary centred and proportional on wide screens */
+.home_banner_area .banner_inner .banner_content .media {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto; }
+.home_banner_area .profile_photo {
+  width: clamp(280px, 26vw, 440px);
+  height: clamp(280px, 26vw, 440px); }
+.home_banner_area .banner_inner .banner_content .media .d-flex {
+  padding-right: clamp(30px, 4vw, 70px); }
+@media (max-width: 991px) {
+  .home_banner_area .profile_photo {
+    width: 280px;
+    height: 280px; } }
+@media (max-width: 1199px) {
+  .home_banner_area .banner_inner .banner_content {
+    max-width: 640px; }
+  .home_banner_area .banner_inner .banner_content .media .d-flex {
+    text-align: center; }
+  .home_banner_area .banner_inner .banner_content .media .d-flex img.profile_photo {
+    width: 320px;
+    height: 320px;
+    max-width: 100%;
+    margin: 0 auto; } }
+@media (max-width: 575px) {
+  .home_banner_area .banner_inner .banner_content .media .d-flex img.profile_photo {
+    width: 260px;
+    height: 260px; } }
+.home_banner_area .banner_inner .banner_content .media .d-flex img.profile_photo {
+  aspect-ratio: 1 / 1;
+  height: auto; }
