@@ -3003,3 +3003,37 @@ h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+
+/* Home banner: profile photo and summary layout */
+.home_banner_area .banner_inner .banner_content {
+  width: 100%; }
+.home_banner_area .banner_inner .banner_content .media {
+  align-items: flex-start; }
+.home_banner_area .banner_inner .banner_content .media .d-flex {
+  flex: 0 0 auto;
+  padding-right: 60px; }
+.home_banner_area .banner_inner .banner_content .media .media-body {
+  min-width: 0;
+  align-self: flex-start; }
+.home_banner_area .profile_photo {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 12px; }
+.personal_text p.summary_text {
+  max-width: 680px;
+  line-height: 1.7;
+  text-align: left;
+  margin-bottom: 16px; }
+.personal_text p.summary_text:last-of-type {
+  margin-bottom: 35px; }
+@media (max-width: 991px) {
+  .home_banner_area .banner_inner .banner_content .media {
+    flex-direction: column;
+    align-items: center; }
+  .home_banner_area .banner_inner .banner_content .media .d-flex {
+    padding-right: 0;
+    margin-bottom: 30px; }
+  .home_banner_area .profile_photo {
+    width: 280px;
+    height: 280px; } }
