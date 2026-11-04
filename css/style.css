@@ -3037,3 +3037,22 @@ h6 {
   .home_banner_area .profile_photo {
     width: 280px;
     height: 280px; } }
+
+/* Featured projects: equal-size square cards at every screen width */
+.h_gallery_item {
+  display: block;
+  width: 100%; }
+.h_gallery_item .g_img_item a {
+  display: block; }
+.h_gallery_item .g_img_item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: #f4f4f8; }
+@media (max-width: 575px) {
+  .h_gallery_item .g_img_item,
+  .h_gallery_item .g_item_text {
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto; } }
